@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bS2-xW-ryq">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="dpU-4c-Nfx"/>
+                                    <constraint firstAttribute="height" constant="200" id="xXf-Le-Jhc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wm-W9-hFt">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Select Image">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressSelectImage:" destination="2" eventType="touchUpInside" id="N9c-fd-bvF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1. Select Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtq-26-k4r">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9nw-Nc-JQo"/>
+                                    <constraint firstAttribute="width" constant="119" id="tTJ-uo-vWE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2. Get AssetURL from the selected image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soN-8V-KyP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="BzM-y8-tUe"/>
+                                    <constraint firstAttribute="height" constant="21" id="QKD-fJ-ZlQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AssetURL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YxO-fj-QC5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jZa-u7-lqK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3. Access the URL and get the Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxN-Vk-wMm">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4I5-hs-oPG"/>
+                                    <constraint firstAttribute="width" constant="283" id="xjK-ta-Gja"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtm-ch-03e">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Get Image">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressGetImage:" destination="2" eventType="touchUpInside" id="bdG-Wx-kAS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Wm-W9-hFt" firstAttribute="top" secondItem="Mtq-26-k4r" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="1uu-qx-ebj"/>
+                            <constraint firstItem="Mtq-26-k4r" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="60Y-Du-Db8"/>
+                            <constraint firstItem="Jtm-ch-03e" firstAttribute="centerX" secondItem="YxO-fj-QC5" secondAttribute="centerX" type="default" id="AwV-79-4ha"/>
+                            <constraint firstItem="pxN-Vk-wMm" firstAttribute="top" secondItem="YxO-fj-QC5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GfI-Ax-32Q"/>
+                            <constraint firstItem="bS2-xW-ryq" firstAttribute="centerX" secondItem="Jtm-ch-03e" secondAttribute="centerX" type="default" id="Idk-ZT-3fy"/>
+                            <constraint firstItem="YxO-fj-QC5" firstAttribute="top" secondItem="soN-8V-KyP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="MpH-5W-T5H"/>
+                            <constraint firstItem="soN-8V-KyP" firstAttribute="top" secondItem="3Wm-W9-hFt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="P90-Df-17c"/>
+                            <constraint firstItem="Jtm-ch-03e" firstAttribute="top" secondItem="pxN-Vk-wMm" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Qs1-pZ-oGz"/>
+                            <constraint firstItem="3Wm-W9-hFt" firstAttribute="centerX" secondItem="YxO-fj-QC5" secondAttribute="centerX" type="default" id="WHn-B4-YaG"/>
+                            <constraint firstItem="pxN-Vk-wMm" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="X0W-gP-LCi"/>
+                            <constraint firstItem="Mtq-26-k4r" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="cvN-o5-8Dr"/>
+                            <constraint firstItem="YxO-fj-QC5" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="jie-Jm-gY9"/>
+                            <constraint firstAttribute="bottom" secondItem="bS2-xW-ryq" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="lyl-sQ-1d4"/>
+                            <constraint firstItem="soN-8V-KyP" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vdp-wZ-TAw"/>
+                            <constraint firstItem="YxO-fj-QC5" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="xGf-IV-vZm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getButton" destination="Jtm-ch-03e" id="khr-hN-q39"/>
+                        <outlet property="imageView" destination="bS2-xW-ryq" id="JVo-rO-4RD"/>
+                        <outlet property="selectButton" destination="3Wm-W9-hFt" id="06A-Kr-n36"/>
+                        <outlet property="urlLabel" destination="YxO-fj-QC5" id="l6g-LN-4Xv"/>
+                        <segue destination="hBV-Jq-bqD" kind="modal" identifier="ToTableView" id="aQu-YS-oQS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="-16"/>
+        </scene>
+        <!--Table View Controller - AssetsGroups-->
+        <scene sceneID="LBx-c2-i1h">
+            <objects>
+                <tableViewController id="E7v-rN-b2g" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yAr-ir-QXS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="XHr-Ak-e6x">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="AssetsGroups" id="jdH-ke-HNL"/>
+                    <connections>
+                        <segue destination="d49-Wm-PxL" kind="push" identifier="ToCollectionView" id="xZc-9j-m1a"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mg8-s4-XRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021" y="-16"/>
+        </scene>
+        <!--Collection View Controller - Assets-->
+        <scene sceneID="0hM-tz-GXA">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="d49-Wm-PxL" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="oMo-A3-2xw">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vYy-O1-xoh">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="uDO-3z-UCH">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="d49-Wm-PxL" id="0jJ-YV-Kjd"/>
+                            <outlet property="delegate" destination="d49-Wm-PxL" id="pSD-iv-kLD"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Assets" id="JZC-c2-zJS"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LK-Oq-v0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="-16"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ey3-Lv-fYL">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="hBV-Jq-bqD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fw4-qO-7GP">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E7v-rN-b2g" kind="relationship" relationship="rootViewController" id="O5D-MN-cYT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8w9-Q1-pBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="567" y="-16"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pressGetImage:"/>
+                <relationship kind="action" name="pressSelectImage:"/>
+                <relationship kind="outlet" name="getButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="selectButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="urlLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
