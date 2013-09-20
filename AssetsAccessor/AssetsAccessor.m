@@ -103,7 +103,7 @@ static ALAssetsLibrary *assetsLibrary;
 
 #pragma mark - Method for getting AssetsGroups asynchronously
 
-- (void)getAssetsGroupWithTypes:(ALAssetsGroupType)groupTypes{
+- (void)getAssetsGroupsWithTypes:(ALAssetsGroupType)groupTypes{
     NSMutableArray *groups = [[NSMutableArray alloc] init];
     [assetsLibrary enumerateGroupsWithTypes:groupTypes
                                  usingBlock:^(ALAssetsGroup *group, BOOL *stop){

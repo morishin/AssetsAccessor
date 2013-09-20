@@ -31,7 +31,7 @@
 - (id)initWithDelegate:(id<AssetsAccessorDelegate>)delegate;
 - (void)getAssetByURL:(NSURL *)assetURL;
 - (void)getAssetsByURLs:(NSArray *)assetURLs;
-- (void)getAssetsGroupWithTypes:(ALAssetsGroupType)groupTypes;
+- (void)getAssetsGroupsWithTypes:(ALAssetsGroupType)groupTypes;
 - (void)getAssetsFromGroup:(ALAssetsGroup *)group withFilter:(ALAssetsFilter *)filter;
 
 @end

@@ -24,7 +24,7 @@
 #pragma mark - IBActions
 
 - (IBAction)pressSelectImage:(id)sender {
-    [assetsAccessor getAssetsGroupWithTypes:ALAssetsGroupAll];
+    [assetsAccessor getAssetsGroupsWithTypes:ALAssetsGroupAll];
 }
 
 - (IBAction)pressGetImage:(id)sender {
