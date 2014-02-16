@@ -3,6 +3,8 @@ AssetsAccessor
 
 A Class for accessing Assets (photos and videos) in iOS device using the Assets Library Framework.
 
+[Here](http://tech.camph.net/?p=154) is the post about this (Japanese).
+
 Methods
 -------
 AssetsAccessor Class has the following methods.
