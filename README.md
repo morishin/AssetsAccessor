@@ -8,7 +8,7 @@ A Class for accessing Assets (photos and videos) in iOS device using the Assets 
 Methods
 -------
 AssetsAccessor Class has the following methods.
-```
+```objc
 - (void)getAssetByURL:(NSURL *)assetURL;
 - (void)getAssetsByURLs:(NSArray *)assetURLs;
 - (void)getAssetsGroupsWithTypes:(ALAssetsGroupType)groupTypes;
@@ -17,7 +17,7 @@ AssetsAccessor Class has the following methods.
 And the following delegate methods corresponding to above.
 AssetsAccessorDelegate Methods
 ---------------
-```
+```objc
 - (void)assetDidLoadByURL:(ALAsset *)asset;
 - (void)assetDidFailLoadWithError:(NSError *)error;
 - (void)assetsDidLoadByURLs:(NSArray *)assets;
@@ -28,7 +28,7 @@ AssetsAccessorDelegate Methods
 Example
 -------
 ExampleViewController.h
-```
+```objc
 #import <UIKit/UIKit.h>
 #import "AssetsAccessor.h"
 
@@ -37,7 +37,7 @@ ExampleViewController.h
 }
 ```
 ExampleViewController.m
-```
+```objc
 @implementation ViewController
 
 - (void)viewDidLoad
